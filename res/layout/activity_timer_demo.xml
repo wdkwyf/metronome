@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.timer_test3.TimerDemoActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/music1"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+  			android:textColor="#e7e7e7"
+            android:text="Count"
+            android:textSize="65sp" />
+
+        <EditText
+            android:id="@+id/edittext_rate"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:background="@null"
+            android:hint="intput the rate"
+            android:inputType="numberDecimal"
+            android:padding="15sp"
+            android:textSize="44sp"
+            android:textColor="#e7e7e7"
+            android:drawableBottom="@drawable/music4"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal" >
+
+        <Button
+            android:id="@+id/button_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bt_3"
+            android:gravity="bottom|right" />
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bt_1"
+            android:gravity="bottom|left" />
+
+    </RelativeLayout>
+
+</FrameLayout>
